@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VSGeolocationPickerView">
+            <connections>
+                <outlet property="buttonGoToCurrentLocation" destination="p5n-fO-5Jo" id="Rh4-Rp-fDI"/>
+                <outlet property="constraintSearchYOrdinate" destination="Fik-qs-S7s" id="Sk5-6V-dne"/>
+                <outlet property="mapView" destination="7jV-jO-aSP" id="5Sh-jO-zdX"/>
+                <outlet property="textFieldSearch" destination="ekT-Lt-u1A" id="7aG-Ds-Sad"/>
+                <outlet property="viewSelectCrrentLocation" destination="5SJ-h6-DQB" id="kfD-7k-0tc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7jV-jO-aSP"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GL2-b9-PEa">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SJ-h6-DQB">
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_location_on_white" translatesAutoresizingMaskIntoConstraints="NO" id="frX-vK-XYQ">
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="frX-vK-XYQ" secondAttribute="height" multiplier="1:1" id="eqw-EN-xdG"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfH-JM-nj3">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="frX-vK-XYQ" firstAttribute="centerY" secondItem="TfH-JM-nj3" secondAttribute="centerY" id="PEP-G2-f73"/>
+                                <constraint firstItem="frX-vK-XYQ" firstAttribute="top" secondItem="5SJ-h6-DQB" secondAttribute="top" constant="8" id="Q7F-l8-Lau"/>
+                                <constraint firstAttribute="trailing" secondItem="TfH-JM-nj3" secondAttribute="trailing" constant="10" id="T9x-EQ-1hK"/>
+                                <constraint firstItem="frX-vK-XYQ" firstAttribute="leading" secondItem="5SJ-h6-DQB" secondAttribute="leading" id="cJA-Fs-Akt"/>
+                                <constraint firstItem="TfH-JM-nj3" firstAttribute="leading" secondItem="frX-vK-XYQ" secondAttribute="trailing" constant="10" id="foh-w2-3qg"/>
+                                <constraint firstAttribute="bottom" secondItem="frX-vK-XYQ" secondAttribute="bottom" constant="8" id="pSP-MT-vYc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="5SJ-h6-DQB" firstAttribute="centerX" secondItem="GL2-b9-PEa" secondAttribute="centerX" id="Odk-K2-IDF"/>
+                        <constraint firstAttribute="height" constant="50" id="Og6-Ka-TQ1"/>
+                        <constraint firstItem="5SJ-h6-DQB" firstAttribute="centerY" secondItem="GL2-b9-PEa" secondAttribute="centerY" id="UKK-4U-acR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5n-fO-5Jo">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="FPL-8W-vPh"/>
+                        <constraint firstAttribute="height" constant="30" id="T8X-DS-Cz0"/>
+                    </constraints>
+                    <state key="normal" image="ic_my_location_white"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tap here to enter start address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekT-Lt-u1A">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="h0d-yT-E3x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="webSearch"/>
+                    <connections>
+                        <action selector="textfieldEditingChanged:" destination="-1" eventType="editingChanged" id="3C8-gf-g7Y"/>
+                        <outlet property="delegate" destination="-1" id="cx8-wn-hUU"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p5n-fO-5Jo" firstAttribute="trailing" secondItem="7jV-jO-aSP" secondAttribute="trailing" constant="-8" id="0NY-1f-DeU"/>
+                <constraint firstItem="GL2-b9-PEa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4uk-6q-mbZ"/>
+                <constraint firstAttribute="trailing" secondItem="ekT-Lt-u1A" secondAttribute="trailing" constant="20" id="CRi-48-kLL"/>
+                <constraint firstItem="7jV-jO-aSP" firstAttribute="top" secondItem="ekT-Lt-u1A" secondAttribute="top" constant="-10" id="Fik-qs-S7s"/>
+                <constraint firstItem="7jV-jO-aSP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K3g-AS-pzT"/>
+                <constraint firstItem="GL2-b9-PEa" firstAttribute="top" secondItem="7jV-jO-aSP" secondAttribute="bottom" id="MDc-UI-RvS"/>
+                <constraint firstItem="ekT-Lt-u1A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="RrK-zY-xxr"/>
+                <constraint firstItem="7jV-jO-aSP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a8n-qv-KS4"/>
+                <constraint firstAttribute="trailing" secondItem="7jV-jO-aSP" secondAttribute="trailing" id="bbI-kB-5zG"/>
+                <constraint firstItem="GL2-b9-PEa" firstAttribute="height" secondItem="7jV-jO-aSP" secondAttribute="height" multiplier="1:2" id="n9f-uP-Wzf"/>
+                <constraint firstAttribute="trailing" secondItem="GL2-b9-PEa" secondAttribute="trailing" id="tih-O2-eza"/>
+                <constraint firstItem="p5n-fO-5Jo" firstAttribute="bottom" secondItem="7jV-jO-aSP" secondAttribute="bottom" constant="-8" id="xRC-BT-X8Y"/>
+            </constraints>
+            <point key="canvasLocation" x="139.5" y="-173.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_location_on_white" width="24" height="24"/>
+        <image name="ic_my_location_white" width="24" height="24"/>
+    </resources>
+</document>

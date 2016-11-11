@@ -17,3 +17,6 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+
+vsMileTracker/vsMileTracker.xcodeproj/xcuserdata/*
+vsMileTracker/vsMileTracker.xcodeproj/project.xcworkspace/xcuserdata/*

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VSDatePickerView">
+            <connections>
+                <outlet property="bottomContainerView" destination="Ig9-3R-p82" id="DUE-S4-rDo"/>
+                <outlet property="datePicker" destination="mNg-2X-zTx" id="NPc-WA-ACD"/>
+                <outlet property="imageViewExpandShrinkIcon" destination="iIj-SD-hdM" id="wSv-od-MGe"/>
+                <outlet property="labelTimeKey" destination="9V4-QY-Mje" id="VFY-Sq-vCc"/>
+                <outlet property="labelTimeValue" destination="7gW-04-c8h" id="CHC-np-xDa"/>
+                <outlet property="topContainerView" destination="sED-WX-iUw" id="4my-2g-zCE"/>
+                <outlet property="topViewHeight" destination="qBB-QS-KWn" id="LPa-N7-XPa"/>
+                <outlet property="totalHeightOfView" destination="Rzo-X6-sAg" id="eKO-dv-WbG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sED-WX-iUw">
+                    <frame key="frameInset" minX="16" minY="63" width="343" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Start Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9V4-QY-Mje">
+                            <frame key="frameInset" minX="8" minY="54" width="80" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="qHd-GU-LEA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="7 Aug 11:00 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gW-04-c8h">
+                            <frame key="frameInset" minX="138" minY="54" width="118" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_arrow_drop_down_white" translatesAutoresizingMaskIntoConstraints="NO" id="iIj-SD-hdM">
+                            <frame key="frameInset" minX="306" minY="43" width="29" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="iIj-SD-hdM" secondAttribute="height" multiplier="29:42" id="Jlu-Cx-YCG"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.28637771029999998" green="0.1931040893" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="iIj-SD-hdM" firstAttribute="top" secondItem="sED-WX-iUw" secondAttribute="top" id="7xQ-DK-kaO"/>
+                        <constraint firstItem="7gW-04-c8h" firstAttribute="leading" secondItem="9V4-QY-Mje" secondAttribute="trailing" constant="10" id="CR5-eP-yas"/>
+                        <constraint firstItem="iIj-SD-hdM" firstAttribute="leading" secondItem="7gW-04-c8h" secondAttribute="trailing" constant="10" id="GpG-bC-lpe"/>
+                        <constraint firstAttribute="trailing" secondItem="iIj-SD-hdM" secondAttribute="trailing" id="IW3-Vb-uAK"/>
+                        <constraint firstItem="iIj-SD-hdM" firstAttribute="leading" secondItem="7gW-04-c8h" secondAttribute="trailing" constant="10" id="OhY-cT-SZO"/>
+                        <constraint firstItem="7gW-04-c8h" firstAttribute="leading" secondItem="9V4-QY-Mje" secondAttribute="trailing" constant="10" id="QRC-HB-pwD"/>
+                        <constraint firstItem="9V4-QY-Mje" firstAttribute="centerY" secondItem="7gW-04-c8h" secondAttribute="centerY" id="TGl-0C-ZpF"/>
+                        <constraint firstItem="7gW-04-c8h" firstAttribute="centerY" secondItem="iIj-SD-hdM" secondAttribute="centerY" id="TiU-GK-wY7"/>
+                        <constraint firstItem="9V4-QY-Mje" firstAttribute="centerY" secondItem="sED-WX-iUw" secondAttribute="centerY" id="Wku-lm-rec"/>
+                        <constraint firstAttribute="bottom" secondItem="iIj-SD-hdM" secondAttribute="bottom" id="aha-Aa-4vl"/>
+                        <constraint firstAttribute="height" constant="45" id="qBB-QS-KWn"/>
+                        <constraint firstItem="9V4-QY-Mje" firstAttribute="leading" secondItem="sED-WX-iUw" secondAttribute="leading" id="uYw-nU-iUL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ig9-3R-p82">
+                    <frame key="frameInset" minX="16" minY="218" width="343" height="196"/>
+                    <subviews>
+                        <datePicker clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="mNg-2X-zTx">
+                            <frame key="frameInset" minX="15" minY="16" height="165" maxX="8"/>
+                            <color key="backgroundColor" red="0.0" green="0.81960784310000001" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <date key="date" timeIntervalSinceReferenceDate="494752817.57785302">
+                                <!--2016-09-05 07:20:17 +0000-->
+                            </date>
+                            <date key="minimumDate" timeIntervalSinceReferenceDate="347108400">
+                                <!--2012-01-01 11:00:00 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="mNg-2X-zTx" firstAttribute="leading" secondItem="Ig9-3R-p82" secondAttribute="leading" id="Uwa-hY-04e"/>
+                        <constraint firstAttribute="trailing" secondItem="mNg-2X-zTx" secondAttribute="trailing" id="WGb-k5-3xr"/>
+                        <constraint firstAttribute="bottom" secondItem="mNg-2X-zTx" secondAttribute="bottom" id="Ysh-hZ-AEO"/>
+                        <constraint firstItem="mNg-2X-zTx" firstAttribute="top" secondItem="Ig9-3R-p82" secondAttribute="top" id="yEM-H6-yCQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sED-WX-iUw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Kab-ZO-rWv"/>
+                <constraint firstItem="sED-WX-iUw" firstAttribute="height" secondItem="Ig9-3R-p82" secondAttribute="height" multiplier="1:5" id="Rzo-X6-sAg"/>
+                <constraint firstItem="Ig9-3R-p82" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aYL-pw-biZ"/>
+                <constraint firstItem="Ig9-3R-p82" firstAttribute="top" secondItem="sED-WX-iUw" secondAttribute="bottom" id="bUA-tD-lWh"/>
+                <constraint firstItem="Ig9-3R-p82" firstAttribute="top" secondItem="sED-WX-iUw" secondAttribute="bottom" id="egH-C1-uBE"/>
+                <constraint firstAttribute="trailing" secondItem="sED-WX-iUw" secondAttribute="trailing" constant="10" id="gOQ-do-Kc2"/>
+                <constraint firstAttribute="trailing" secondItem="Ig9-3R-p82" secondAttribute="trailing" id="hlu-Xm-zMe"/>
+                <constraint firstItem="sED-WX-iUw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lV7-lp-lhE"/>
+            </constraints>
+            <point key="canvasLocation" x="85.5" y="81.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_drop_down_white" width="24" height="24"/>
+    </resources>
+</document>

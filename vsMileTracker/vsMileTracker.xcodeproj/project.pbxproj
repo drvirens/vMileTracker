@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B61C26E41D68207500BE95EE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61C26E31D68207500BE95EE /* MapKit.framework */; };
+		B69EBF9B1DCDCC3800E2F96A /* VSTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69EBF8E1DCDCC3800E2F96A /* VSTextFieldView.xib */; };
+		B6DCC1351DCDCDDD00451197 /* VSAddExpenseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC09E1DCDCDDD00451197 /* VSAddExpenseDataSource.m */; };
+		B6DCC1361DCDCDDE00451197 /* VSAddExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0A01DCDCDDD00451197 /* VSAddExpenseViewController.m */; };
+		B6DCC1371DCDCDDE00451197 /* VSAmountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0A21DCDCDDD00451197 /* VSAmountCell.m */; };
+		B6DCC1381DCDCDDE00451197 /* VSDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0A41DCDCDDD00451197 /* VSDateCell.m */; };
+		B6DCC1391DCDCDDE00451197 /* VSExpenseAttachmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0A61DCDCDDD00451197 /* VSExpenseAttachmentCell.m */; };
+		B6DCC13A1DCDCDDE00451197 /* VSHorizontalMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0A81DCDCDDD00451197 /* VSHorizontalMenuCell.m */; };
+		B6DCC13B1DCDCDDE00451197 /* VSLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0AA1DCDCDDD00451197 /* VSLocationCell.m */; };
+		B6DCC13C1DCDCDDE00451197 /* VSMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0AC1DCDCDDD00451197 /* VSMenuCell.m */; };
+		B6DCC13D1DCDCDDE00451197 /* VSMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0AE1DCDCDDD00451197 /* VSMenuModel.m */; };
+		B6DCC13E1DCDCDDE00451197 /* VSNotesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0B01DCDCDDD00451197 /* VSNotesCell.m */; };
+		B6DCC13F1DCDCDDE00451197 /* VSAddNewRideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0B31DCDCDDD00451197 /* VSAddNewRideModel.m */; };
+		B6DCC1411DCDCDDE00451197 /* VSAddRideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0B71DCDCDDD00451197 /* VSAddRideViewController.m */; };
+		B6DCC1421DCDCDDE00451197 /* VSChooseDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0B91DCDCDDD00451197 /* VSChooseDateView.m */; };
+		B6DCC1431DCDCDDE00451197 /* VSChooseDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC0BA1DCDCDDD00451197 /* VSChooseDateView.xib */; };
+		B6DCC1441DCDCDDE00451197 /* VSDatePickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0BC1DCDCDDD00451197 /* VSDatePickerTableViewCell.m */; };
+		B6DCC1451DCDCDDE00451197 /* VSLocationPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0BE1DCDCDDD00451197 /* VSLocationPickerTableViewCell.m */; };
+		B6DCC1461DCDCDDE00451197 /* VSSectionTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0C01DCDCDDD00451197 /* VSSectionTitleTableViewCell.m */; };
+		B6DCC1471DCDCDDE00451197 /* VSSelectedDateTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0C21DCDCDDD00451197 /* VSSelectedDateTableView.m */; };
+		B6DCC1481DCDCDDE00451197 /* VSSelectedDateTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC0C31DCDCDDD00451197 /* VSSelectedDateTableView.xib */; };
+		B6DCC1491DCDCDDE00451197 /* ANDBackgroundChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0C61DCDCDDD00451197 /* ANDBackgroundChartView.m */; };
+		B6DCC14A1DCDCDDE00451197 /* ANDInternalLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0C81DCDCDDD00451197 /* ANDInternalLineChartView.m */; };
+		B6DCC14B1DCDCDDE00451197 /* ANDLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0CA1DCDCDDD00451197 /* ANDLineChartView.m */; };
+		B6DCC14C1DCDCDDE00451197 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0CC1DCDCDDD00451197 /* AppDelegate.m */; };
+		B6DCC14D1DCDCDDE00451197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC0CD1DCDCDDD00451197 /* Assets.xcassets */; };
+		B6DCC14E1DCDCDDE00451197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC0CF1DCDCDDD00451197 /* LaunchScreen.storyboard */; };
+		B6DCC14F1DCDCDDE00451197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC0D11DCDCDDD00451197 /* Main.storyboard */; };
+		B6DCC1501DCDCDDE00451197 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0D71DCDCDDD00451197 /* ViewController.m */; };
+		B6DCC1511DCDCDDE00451197 /* VSAddNewRideModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0D91DCDCDDD00451197 /* VSAddNewRideModelController.m */; };
+		B6DCC1521DCDCDDE00451197 /* VSDrivesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0DC1DCDCDDD00451197 /* VSDrivesDataSource.m */; };
+		B6DCC1531DCDCDDE00451197 /* VSModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0DE1DCDCDDD00451197 /* VSModelBase.m */; };
+		B6DCC1541DCDCDDE00451197 /* VSModelNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0E11DCDCDDD00451197 /* VSModelNotification.m */; };
+		B6DCC1551DCDCDDE00451197 /* VSModelRide.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0E31DCDCDDD00451197 /* VSModelRide.m */; };
+		B6DCC1561DCDCDDE00451197 /* VSModelSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0E51DCDCDDD00451197 /* VSModelSummary.m */; };
+		B6DCC1571DCDCDDE00451197 /* VSModelTravel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0E71DCDCDDD00451197 /* VSModelTravel.m */; };
+		B6DCC1581DCDCDDE00451197 /* VSChooseDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0EA1DCDCDDD00451197 /* VSChooseDateTableViewCell.m */; };
+		B6DCC1591DCDCDDE00451197 /* VSExpenseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0EC1DCDCDDD00451197 /* VSExpenseTableViewCell.m */; };
+		B6DCC15A1DCDCDDE00451197 /* VSNotesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0EE1DCDCDDD00451197 /* VSNotesTableViewCell.m */; };
+		B6DCC15B1DCDCDDE00451197 /* VSNotificationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0F01DCDCDDD00451197 /* VSNotificationsTableViewCell.m */; };
+		B6DCC15C1DCDCDDE00451197 /* VSRideHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0F21DCDCDDD00451197 /* VSRideHistoryTableViewCell.m */; };
+		B6DCC15D1DCDCDDE00451197 /* VSSelectedDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0F41DCDCDDD00451197 /* VSSelectedDateTableViewCell.m */; };
+		B6DCC15E1DCDCDDE00451197 /* VSSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0F61DCDCDDD00451197 /* VSSummaryTableViewCell.m */; };
+		B6DCC15F1DCDCDDE00451197 /* VSTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0F81DCDCDDD00451197 /* VSTextFieldView.m */; };
+		B6DCC1601DCDCDDE00451197 /* VSTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC0F91DCDCDDD00451197 /* VSTextFieldView.xib */; };
+		B6DCC1611DCDCDDE00451197 /* VSTextPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0FB1DCDCDDD00451197 /* VSTextPickerTableViewCell.m */; };
+		B6DCC1621DCDCDDE00451197 /* VSTravelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0FD1DCDCDDD00451197 /* VSTravelTableViewCell.m */; };
+		B6DCC1631DCDCDDE00451197 /* VSAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1001DCDCDDD00451197 /* VSAnnotationView.m */; };
+		B6DCC1641DCDCDDE00451197 /* VSGeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1021DCDCDDD00451197 /* VSGeoLocation.m */; };
+		B6DCC1651DCDCDDE00451197 /* VSGeolocationPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1041DCDCDDD00451197 /* VSGeolocationPickerView.m */; };
+		B6DCC1661DCDCDDE00451197 /* VSGeolocationPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC1051DCDCDDD00451197 /* VSGeolocationPickerView.xib */; };
+		B6DCC1671DCDCDDE00451197 /* VSMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1071DCDCDDD00451197 /* VSMapUtil.m */; };
+		B6DCC1681DCDCDDE00451197 /* VSPickerItemAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1091DCDCDDD00451197 /* VSPickerItemAnnotation.m */; };
+		B6DCC1691DCDCDDE00451197 /* VSAddPurposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC10D1DCDCDDD00451197 /* VSAddPurposeViewController.m */; };
+		B6DCC16A1DCDCDDE00451197 /* VSAddVehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC10F1DCDCDDD00451197 /* VSAddVehicleViewController.m */; };
+		B6DCC16B1DCDCDDE00451197 /* VSPurposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1111DCDCDDD00451197 /* VSPurposeViewController.m */; };
+		B6DCC16C1DCDCDDE00451197 /* VSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1131DCDCDDD00451197 /* VSSettingsViewController.m */; };
+		B6DCC16D1DCDCDDE00451197 /* VSVehiclesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1151DCDCDDD00451197 /* VSVehiclesViewController.m */; };
+		B6DCC16E1DCDCDDE00451197 /* VSAddVehicleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1181DCDCDDD00451197 /* VSAddVehicleDataSource.m */; };
+		B6DCC16F1DCDCDDE00451197 /* VSMoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC11A1DCDCDDD00451197 /* VSMoreModel.m */; };
+		B6DCC1701DCDCDDE00451197 /* VSPurposeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC11C1DCDCDDD00451197 /* VSPurposeModel.m */; };
+		B6DCC1711DCDCDDE00451197 /* VSVehicleAddFieldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC11E1DCDCDDD00451197 /* VSVehicleAddFieldModel.m */; };
+		B6DCC1721DCDCDDE00451197 /* VSVehicleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1201DCDCDDD00451197 /* VSVehicleModel.m */; };
+		B6DCC1731DCDCDDE00451197 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC1211DCDCDDD00451197 /* Settings.storyboard */; };
+		B6DCC1741DCDCDDE00451197 /* VSMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1241DCDCDDD00451197 /* VSMoreCell.m */; };
+		B6DCC1751DCDCDDE00451197 /* VSPurposeAddFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1261DCDCDDD00451197 /* VSPurposeAddFieldCell.m */; };
+		B6DCC1761DCDCDDE00451197 /* VSPurposeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1281DCDCDDD00451197 /* VSPurposeCell.m */; };
+		B6DCC1771DCDCDDE00451197 /* VSSettingsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC12A1DCDCDDD00451197 /* VSSettingsSwitchCell.m */; };
+		B6DCC1781DCDCDDE00451197 /* VSVehicleAddFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC12C1DCDCDDD00451197 /* VSVehicleAddFieldCell.m */; };
+		B6DCC1791DCDCDDE00451197 /* VSVehicleAddFieldSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC12E1DCDCDDD00451197 /* VSVehicleAddFieldSwitchCell.m */; };
+		B6DCC17A1DCDCDDE00451197 /* VSVehicleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1301DCDCDDD00451197 /* VSVehicleCell.m */; };
+		B6DCC17B1DCDCDDE00451197 /* VSSettingsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1321DCDCDDD00451197 /* VSSettingsConstants.m */; };
+		B6DCC1811DCDCE2600451197 /* VSDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC17F1DCDCE2600451197 /* VSDatePickerView.m */; };
+		B6DCC1821DCDCE2600451197 /* VSDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DCC1801DCDCE2600451197 /* VSDatePickerView.xib */; };
+		B6DCC1831DCDCF2800451197 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FB5E8E1D66F918004B716F /* main.m */; };
+		B6DCC1861DCDDE3600451197 /* VSGeolocationPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC1851DCDDE3600451197 /* VSGeolocationPickerCell.m */; };
+		B6E3C80C1DCEF74200A6B473 /* VSCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3C80B1DCEF74200A6B473 /* VSCameraController.m */; };
+		B6E3C80F1DCEF87200A6B473 /* VSCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3C80E1DCEF87200A6B473 /* VSCameraViewController.m */; };
+		B6E3C8121DCF336400A6B473 /* VSCameraPermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3C8111DCF336400A6B473 /* VSCameraPermissionsViewController.m */; };
+		B6E3C8161DD0096300A6B473 /* VSBranding.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3C8151DD0096300A6B473 /* VSBranding.m */; };
+		B6E3C8191DD0097C00A6B473 /* VSQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3C8181DD0097C00A6B473 /* VSQueue.m */; };
+		B6FB5E981D66F918004B716F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FB5E961D66F918004B716F /* Main.storyboard */; };
+		B6FB5E9D1D66F918004B716F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FB5E9C1D66F918004B716F /* Assets.xcassets */; };
+		B6FB5EA01D66F918004B716F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FB5E9E1D66F918004B716F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B61C26E31D68207500BE95EE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B69EBF8E1DCDCC3800E2F96A /* VSTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VSTextFieldView.xib; path = "/Users/virendrashakya/VIREN/mile-tracker/__backup/vsMileTracker/vsMileTracker/Landing/View/VSTextFieldView.xib"; sourceTree = "<absolute>"; };
+		B6DCC09D1DCDCDDD00451197 /* VSAddExpenseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddExpenseDataSource.h; sourceTree = "<group>"; };
+		B6DCC09E1DCDCDDD00451197 /* VSAddExpenseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddExpenseDataSource.m; sourceTree = "<group>"; };
+		B6DCC09F1DCDCDDD00451197 /* VSAddExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddExpenseViewController.h; sourceTree = "<group>"; };
+		B6DCC0A01DCDCDDD00451197 /* VSAddExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddExpenseViewController.m; sourceTree = "<group>"; };
+		B6DCC0A11DCDCDDD00451197 /* VSAmountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAmountCell.h; sourceTree = "<group>"; };
+		B6DCC0A21DCDCDDD00451197 /* VSAmountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAmountCell.m; sourceTree = "<group>"; };
+		B6DCC0A31DCDCDDD00451197 /* VSDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDateCell.h; sourceTree = "<group>"; };
+		B6DCC0A41DCDCDDD00451197 /* VSDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDateCell.m; sourceTree = "<group>"; };
+		B6DCC0A51DCDCDDD00451197 /* VSExpenseAttachmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSExpenseAttachmentCell.h; sourceTree = "<group>"; };
+		B6DCC0A61DCDCDDD00451197 /* VSExpenseAttachmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSExpenseAttachmentCell.m; sourceTree = "<group>"; };
+		B6DCC0A71DCDCDDD00451197 /* VSHorizontalMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSHorizontalMenuCell.h; sourceTree = "<group>"; };
+		B6DCC0A81DCDCDDD00451197 /* VSHorizontalMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSHorizontalMenuCell.m; sourceTree = "<group>"; };
+		B6DCC0A91DCDCDDD00451197 /* VSLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSLocationCell.h; sourceTree = "<group>"; };
+		B6DCC0AA1DCDCDDD00451197 /* VSLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSLocationCell.m; sourceTree = "<group>"; };
+		B6DCC0AB1DCDCDDD00451197 /* VSMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMenuCell.h; sourceTree = "<group>"; };
+		B6DCC0AC1DCDCDDD00451197 /* VSMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMenuCell.m; sourceTree = "<group>"; };
+		B6DCC0AD1DCDCDDD00451197 /* VSMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMenuModel.h; sourceTree = "<group>"; };
+		B6DCC0AE1DCDCDDD00451197 /* VSMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMenuModel.m; sourceTree = "<group>"; };
+		B6DCC0AF1DCDCDDD00451197 /* VSNotesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSNotesCell.h; sourceTree = "<group>"; };
+		B6DCC0B01DCDCDDD00451197 /* VSNotesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSNotesCell.m; sourceTree = "<group>"; };
+		B6DCC0B21DCDCDDD00451197 /* VSAddNewRideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddNewRideModel.h; sourceTree = "<group>"; };
+		B6DCC0B31DCDCDDD00451197 /* VSAddNewRideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddNewRideModel.m; sourceTree = "<group>"; };
+		B6DCC0B61DCDCDDD00451197 /* VSAddRideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddRideViewController.h; sourceTree = "<group>"; };
+		B6DCC0B71DCDCDDD00451197 /* VSAddRideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddRideViewController.m; sourceTree = "<group>"; };
+		B6DCC0B81DCDCDDD00451197 /* VSChooseDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSChooseDateView.h; sourceTree = "<group>"; };
+		B6DCC0B91DCDCDDD00451197 /* VSChooseDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSChooseDateView.m; sourceTree = "<group>"; };
+		B6DCC0BA1DCDCDDD00451197 /* VSChooseDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSChooseDateView.xib; sourceTree = "<group>"; };
+		B6DCC0BB1DCDCDDD00451197 /* VSDatePickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDatePickerTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0BC1DCDCDDD00451197 /* VSDatePickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDatePickerTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0BD1DCDCDDD00451197 /* VSLocationPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSLocationPickerTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0BE1DCDCDDD00451197 /* VSLocationPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSLocationPickerTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0BF1DCDCDDD00451197 /* VSSectionTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSectionTitleTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0C01DCDCDDD00451197 /* VSSectionTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSectionTitleTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0C11DCDCDDD00451197 /* VSSelectedDateTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSelectedDateTableView.h; sourceTree = "<group>"; };
+		B6DCC0C21DCDCDDD00451197 /* VSSelectedDateTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSelectedDateTableView.m; sourceTree = "<group>"; };
+		B6DCC0C31DCDCDDD00451197 /* VSSelectedDateTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSSelectedDateTableView.xib; sourceTree = "<group>"; };
+		B6DCC0C51DCDCDDD00451197 /* ANDBackgroundChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDBackgroundChartView.h; sourceTree = "<group>"; };
+		B6DCC0C61DCDCDDD00451197 /* ANDBackgroundChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDBackgroundChartView.m; sourceTree = "<group>"; };
+		B6DCC0C71DCDCDDD00451197 /* ANDInternalLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDInternalLineChartView.h; sourceTree = "<group>"; };
+		B6DCC0C81DCDCDDD00451197 /* ANDInternalLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDInternalLineChartView.m; sourceTree = "<group>"; };
+		B6DCC0C91DCDCDDD00451197 /* ANDLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDLineChartView.h; sourceTree = "<group>"; };
+		B6DCC0CA1DCDCDDD00451197 /* ANDLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDLineChartView.m; sourceTree = "<group>"; };
+		B6DCC0CB1DCDCDDD00451197 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6DCC0CC1DCDCDDD00451197 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6DCC0CD1DCDCDDD00451197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6DCC0D01DCDCDDD00451197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6DCC0D21DCDCDDD00451197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		B6DCC0D61DCDCDDD00451197 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6DCC0D71DCDCDDD00451197 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6DCC0D81DCDCDDD00451197 /* VSAddNewRideModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddNewRideModelController.h; sourceTree = "<group>"; };
+		B6DCC0D91DCDCDDD00451197 /* VSAddNewRideModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddNewRideModelController.m; sourceTree = "<group>"; };
+		B6DCC0DB1DCDCDDD00451197 /* VSDrivesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDrivesDataSource.h; sourceTree = "<group>"; };
+		B6DCC0DC1DCDCDDD00451197 /* VSDrivesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDrivesDataSource.m; sourceTree = "<group>"; };
+		B6DCC0DD1DCDCDDD00451197 /* VSModelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSModelBase.h; sourceTree = "<group>"; };
+		B6DCC0DE1DCDCDDD00451197 /* VSModelBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSModelBase.m; sourceTree = "<group>"; };
+		B6DCC0DF1DCDCDDD00451197 /* VSModelBaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSModelBaseDelegate.h; sourceTree = "<group>"; };
+		B6DCC0E01DCDCDDD00451197 /* VSModelNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSModelNotification.h; sourceTree = "<group>"; };
+		B6DCC0E11DCDCDDD00451197 /* VSModelNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSModelNotification.m; sourceTree = "<group>"; };
+		B6DCC0E21DCDCDDD00451197 /* VSModelRide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSModelRide.h; sourceTree = "<group>"; };
+		B6DCC0E31DCDCDDD00451197 /* VSModelRide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSModelRide.m; sourceTree = "<group>"; };
+		B6DCC0E41DCDCDDD00451197 /* VSModelSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSModelSummary.h; sourceTree = "<group>"; };
+		B6DCC0E51DCDCDDD00451197 /* VSModelSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSModelSummary.m; sourceTree = "<group>"; };
+		B6DCC0E61DCDCDDD00451197 /* VSModelTravel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSModelTravel.h; sourceTree = "<group>"; };
+		B6DCC0E71DCDCDDD00451197 /* VSModelTravel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSModelTravel.m; sourceTree = "<group>"; };
+		B6DCC0E91DCDCDDD00451197 /* VSChooseDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSChooseDateTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0EA1DCDCDDD00451197 /* VSChooseDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSChooseDateTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0EB1DCDCDDD00451197 /* VSExpenseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSExpenseTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0EC1DCDCDDD00451197 /* VSExpenseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSExpenseTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0ED1DCDCDDD00451197 /* VSNotesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSNotesTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0EE1DCDCDDD00451197 /* VSNotesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSNotesTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0EF1DCDCDDD00451197 /* VSNotificationsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSNotificationsTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0F01DCDCDDD00451197 /* VSNotificationsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSNotificationsTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0F11DCDCDDD00451197 /* VSRideHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSRideHistoryTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0F21DCDCDDD00451197 /* VSRideHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSRideHistoryTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0F31DCDCDDD00451197 /* VSSelectedDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSelectedDateTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0F41DCDCDDD00451197 /* VSSelectedDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSelectedDateTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0F51DCDCDDD00451197 /* VSSummaryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSummaryTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0F61DCDCDDD00451197 /* VSSummaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSummaryTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0F71DCDCDDD00451197 /* VSTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTextFieldView.h; sourceTree = "<group>"; };
+		B6DCC0F81DCDCDDD00451197 /* VSTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTextFieldView.m; sourceTree = "<group>"; };
+		B6DCC0F91DCDCDDD00451197 /* VSTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSTextFieldView.xib; sourceTree = "<group>"; };
+		B6DCC0FA1DCDCDDD00451197 /* VSTextPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTextPickerTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0FB1DCDCDDD00451197 /* VSTextPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTextPickerTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0FC1DCDCDDD00451197 /* VSTravelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTravelTableViewCell.h; sourceTree = "<group>"; };
+		B6DCC0FD1DCDCDDD00451197 /* VSTravelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTravelTableViewCell.m; sourceTree = "<group>"; };
+		B6DCC0FF1DCDCDDD00451197 /* VSAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAnnotationView.h; sourceTree = "<group>"; };
+		B6DCC1001DCDCDDD00451197 /* VSAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAnnotationView.m; sourceTree = "<group>"; };
+		B6DCC1011DCDCDDD00451197 /* VSGeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGeoLocation.h; sourceTree = "<group>"; };
+		B6DCC1021DCDCDDD00451197 /* VSGeoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSGeoLocation.m; sourceTree = "<group>"; };
+		B6DCC1031DCDCDDD00451197 /* VSGeolocationPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGeolocationPickerView.h; sourceTree = "<group>"; };
+		B6DCC1041DCDCDDD00451197 /* VSGeolocationPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSGeolocationPickerView.m; sourceTree = "<group>"; };
+		B6DCC1051DCDCDDD00451197 /* VSGeolocationPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSGeolocationPickerView.xib; sourceTree = "<group>"; };
+		B6DCC1061DCDCDDD00451197 /* VSMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMapUtil.h; sourceTree = "<group>"; };
+		B6DCC1071DCDCDDD00451197 /* VSMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMapUtil.m; sourceTree = "<group>"; };
+		B6DCC1081DCDCDDD00451197 /* VSPickerItemAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPickerItemAnnotation.h; sourceTree = "<group>"; };
+		B6DCC1091DCDCDDD00451197 /* VSPickerItemAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPickerItemAnnotation.m; sourceTree = "<group>"; };
+		B6DCC10C1DCDCDDD00451197 /* VSAddPurposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddPurposeViewController.h; sourceTree = "<group>"; };
+		B6DCC10D1DCDCDDD00451197 /* VSAddPurposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddPurposeViewController.m; sourceTree = "<group>"; };
+		B6DCC10E1DCDCDDD00451197 /* VSAddVehicleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddVehicleViewController.h; sourceTree = "<group>"; };
+		B6DCC10F1DCDCDDD00451197 /* VSAddVehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddVehicleViewController.m; sourceTree = "<group>"; };
+		B6DCC1101DCDCDDD00451197 /* VSPurposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPurposeViewController.h; sourceTree = "<group>"; };
+		B6DCC1111DCDCDDD00451197 /* VSPurposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPurposeViewController.m; sourceTree = "<group>"; };
+		B6DCC1121DCDCDDD00451197 /* VSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSettingsViewController.h; sourceTree = "<group>"; };
+		B6DCC1131DCDCDDD00451197 /* VSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSettingsViewController.m; sourceTree = "<group>"; };
+		B6DCC1141DCDCDDD00451197 /* VSVehiclesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVehiclesViewController.h; sourceTree = "<group>"; };
+		B6DCC1151DCDCDDD00451197 /* VSVehiclesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSVehiclesViewController.m; sourceTree = "<group>"; };
+		B6DCC1171DCDCDDD00451197 /* VSAddVehicleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddVehicleDataSource.h; sourceTree = "<group>"; };
+		B6DCC1181DCDCDDD00451197 /* VSAddVehicleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddVehicleDataSource.m; sourceTree = "<group>"; };
+		B6DCC1191DCDCDDD00451197 /* VSMoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMoreModel.h; sourceTree = "<group>"; };
+		B6DCC11A1DCDCDDD00451197 /* VSMoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMoreModel.m; sourceTree = "<group>"; };
+		B6DCC11B1DCDCDDD00451197 /* VSPurposeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPurposeModel.h; sourceTree = "<group>"; };
+		B6DCC11C1DCDCDDD00451197 /* VSPurposeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPurposeModel.m; sourceTree = "<group>"; };
+		B6DCC11D1DCDCDDD00451197 /* VSVehicleAddFieldModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVehicleAddFieldModel.h; sourceTree = "<group>"; };
+		B6DCC11E1DCDCDDD00451197 /* VSVehicleAddFieldModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSVehicleAddFieldModel.m; sourceTree = "<group>"; };
+		B6DCC11F1DCDCDDD00451197 /* VSVehicleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVehicleModel.h; sourceTree = "<group>"; };
+		B6DCC1201DCDCDDD00451197 /* VSVehicleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSVehicleModel.m; sourceTree = "<group>"; };
+		B6DCC1211DCDCDDD00451197 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		B6DCC1231DCDCDDD00451197 /* VSMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMoreCell.h; sourceTree = "<group>"; };
+		B6DCC1241DCDCDDD00451197 /* VSMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMoreCell.m; sourceTree = "<group>"; };
+		B6DCC1251DCDCDDD00451197 /* VSPurposeAddFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPurposeAddFieldCell.h; sourceTree = "<group>"; };
+		B6DCC1261DCDCDDD00451197 /* VSPurposeAddFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPurposeAddFieldCell.m; sourceTree = "<group>"; };
+		B6DCC1271DCDCDDD00451197 /* VSPurposeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPurposeCell.h; sourceTree = "<group>"; };
+		B6DCC1281DCDCDDD00451197 /* VSPurposeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPurposeCell.m; sourceTree = "<group>"; };
+		B6DCC1291DCDCDDD00451197 /* VSSettingsSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSettingsSwitchCell.h; sourceTree = "<group>"; };
+		B6DCC12A1DCDCDDD00451197 /* VSSettingsSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSettingsSwitchCell.m; sourceTree = "<group>"; };
+		B6DCC12B1DCDCDDD00451197 /* VSVehicleAddFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVehicleAddFieldCell.h; sourceTree = "<group>"; };
+		B6DCC12C1DCDCDDD00451197 /* VSVehicleAddFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSVehicleAddFieldCell.m; sourceTree = "<group>"; };
+		B6DCC12D1DCDCDDD00451197 /* VSVehicleAddFieldSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVehicleAddFieldSwitchCell.h; sourceTree = "<group>"; };
+		B6DCC12E1DCDCDDD00451197 /* VSVehicleAddFieldSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSVehicleAddFieldSwitchCell.m; sourceTree = "<group>"; };
+		B6DCC12F1DCDCDDD00451197 /* VSVehicleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVehicleCell.h; sourceTree = "<group>"; };
+		B6DCC1301DCDCDDD00451197 /* VSVehicleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSVehicleCell.m; sourceTree = "<group>"; };
+		B6DCC1311DCDCDDD00451197 /* VSSettingsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSettingsConstants.h; sourceTree = "<group>"; };
+		B6DCC1321DCDCDDD00451197 /* VSSettingsConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSettingsConstants.m; sourceTree = "<group>"; };
+		B6DCC17E1DCDCE2600451197 /* VSDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDatePickerView.h; sourceTree = "<group>"; };
+		B6DCC17F1DCDCE2600451197 /* VSDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDatePickerView.m; sourceTree = "<group>"; };
+		B6DCC1801DCDCE2600451197 /* VSDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSDatePickerView.xib; sourceTree = "<group>"; };
+		B6DCC1841DCDDE3600451197 /* VSGeolocationPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSGeolocationPickerCell.h; sourceTree = "<group>"; };
+		B6DCC1851DCDDE3600451197 /* VSGeolocationPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSGeolocationPickerCell.m; sourceTree = "<group>"; };
+		B6E3C80A1DCEF74200A6B473 /* VSCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSCameraController.h; sourceTree = "<group>"; };
+		B6E3C80B1DCEF74200A6B473 /* VSCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSCameraController.m; sourceTree = "<group>"; };
+		B6E3C80D1DCEF87200A6B473 /* VSCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSCameraViewController.h; sourceTree = "<group>"; };
+		B6E3C80E1DCEF87200A6B473 /* VSCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSCameraViewController.m; sourceTree = "<group>"; };
+		B6E3C8101DCF336400A6B473 /* VSCameraPermissionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSCameraPermissionsViewController.h; sourceTree = "<group>"; };
+		B6E3C8111DCF336400A6B473 /* VSCameraPermissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSCameraPermissionsViewController.m; sourceTree = "<group>"; };
+		B6E3C8141DD0096300A6B473 /* VSBranding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSBranding.h; path = Utils/VSBranding.h; sourceTree = "<group>"; };
+		B6E3C8151DD0096300A6B473 /* VSBranding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSBranding.m; path = Utils/VSBranding.m; sourceTree = "<group>"; };
+		B6E3C8171DD0097C00A6B473 /* VSQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSQueue.h; path = Utils/VSQueue.h; sourceTree = "<group>"; };
+		B6E3C8181DD0097C00A6B473 /* VSQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSQueue.m; path = Utils/VSQueue.m; sourceTree = "<group>"; };
+		B6FB5E8A1D66F918004B716F /* vsMileTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vsMileTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6FB5E8E1D66F918004B716F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6FB5E971D66F918004B716F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6FB5E9A1D66F918004B716F /* vsMileTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vsMileTracker.xcdatamodel; sourceTree = "<group>"; };
+		B6FB5E9C1D66F918004B716F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6FB5E9F1D66F918004B716F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6FB5EA11D66F918004B716F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6FB5E871D66F917004B716F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61C26E41D68207500BE95EE /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B61C26E21D68207500BE95EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B61C26E31D68207500BE95EE /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6DCC09C1DCDCDDD00451197 /* AddExpense */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3C8081DCEF6E400A6B473 /* View */,
+				B6E3C8071DCEF6D700A6B473 /* Model */,
+				B6E3C8091DCEF6EB00A6B473 /* Controller */,
+			);
+			path = AddExpense;
+			sourceTree = "<group>";
+		};
+		B6DCC0B11DCDCDDD00451197 /* AddNewRide */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0B21DCDCDDD00451197 /* VSAddNewRideModel.h */,
+				B6DCC0B31DCDCDDD00451197 /* VSAddNewRideModel.m */,
+				B6DCC0B61DCDCDDD00451197 /* VSAddRideViewController.h */,
+				B6DCC0B71DCDCDDD00451197 /* VSAddRideViewController.m */,
+				B6DCC0B81DCDCDDD00451197 /* VSChooseDateView.h */,
+				B6DCC0B91DCDCDDD00451197 /* VSChooseDateView.m */,
+				B6DCC0BA1DCDCDDD00451197 /* VSChooseDateView.xib */,
+				B6DCC0BB1DCDCDDD00451197 /* VSDatePickerTableViewCell.h */,
+				B6DCC0BC1DCDCDDD00451197 /* VSDatePickerTableViewCell.m */,
+				B6DCC0BD1DCDCDDD00451197 /* VSLocationPickerTableViewCell.h */,
+				B6DCC0BE1DCDCDDD00451197 /* VSLocationPickerTableViewCell.m */,
+				B6DCC0BF1DCDCDDD00451197 /* VSSectionTitleTableViewCell.h */,
+				B6DCC0C01DCDCDDD00451197 /* VSSectionTitleTableViewCell.m */,
+				B6DCC0C11DCDCDDD00451197 /* VSSelectedDateTableView.h */,
+				B6DCC0C21DCDCDDD00451197 /* VSSelectedDateTableView.m */,
+				B6DCC0C31DCDCDDD00451197 /* VSSelectedDateTableView.xib */,
+			);
+			path = AddNewRide;
+			sourceTree = "<group>";
+		};
+		B6DCC0C41DCDCDDD00451197 /* ANDLineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0C51DCDCDDD00451197 /* ANDBackgroundChartView.h */,
+				B6DCC0C61DCDCDDD00451197 /* ANDBackgroundChartView.m */,
+				B6DCC0C71DCDCDDD00451197 /* ANDInternalLineChartView.h */,
+				B6DCC0C81DCDCDDD00451197 /* ANDInternalLineChartView.m */,
+				B6DCC0C91DCDCDDD00451197 /* ANDLineChartView.h */,
+				B6DCC0CA1DCDCDDD00451197 /* ANDLineChartView.m */,
+			);
+			path = ANDLineChartView;
+			sourceTree = "<group>";
+		};
+		B6DCC0CE1DCDCDDD00451197 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0CF1DCDCDDD00451197 /* LaunchScreen.storyboard */,
+				B6DCC0D11DCDCDDD00451197 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		B6DCC0D31DCDCDDD00451197 /* GeoSearch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GeoSearch;
+			sourceTree = "<group>";
+		};
+		B6DCC0D41DCDCDDD00451197 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0D51DCDCDDD00451197 /* Controller */,
+				B6DCC0DA1DCDCDDD00451197 /* Model */,
+				B6DCC0E81DCDCDDD00451197 /* View */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		B6DCC0D51DCDCDDD00451197 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0D61DCDCDDD00451197 /* ViewController.h */,
+				B6DCC0D71DCDCDDD00451197 /* ViewController.m */,
+				B6DCC0D81DCDCDDD00451197 /* VSAddNewRideModelController.h */,
+				B6DCC0D91DCDCDDD00451197 /* VSAddNewRideModelController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6DCC0DA1DCDCDDD00451197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0DB1DCDCDDD00451197 /* VSDrivesDataSource.h */,
+				B6DCC0DC1DCDCDDD00451197 /* VSDrivesDataSource.m */,
+				B6DCC0DD1DCDCDDD00451197 /* VSModelBase.h */,
+				B6DCC0DE1DCDCDDD00451197 /* VSModelBase.m */,
+				B6DCC0DF1DCDCDDD00451197 /* VSModelBaseDelegate.h */,
+				B6DCC0E01DCDCDDD00451197 /* VSModelNotification.h */,
+				B6DCC0E11DCDCDDD00451197 /* VSModelNotification.m */,
+				B6DCC0E21DCDCDDD00451197 /* VSModelRide.h */,
+				B6DCC0E31DCDCDDD00451197 /* VSModelRide.m */,
+				B6DCC0E41DCDCDDD00451197 /* VSModelSummary.h */,
+				B6DCC0E51DCDCDDD00451197 /* VSModelSummary.m */,
+				B6DCC0E61DCDCDDD00451197 /* VSModelTravel.h */,
+				B6DCC0E71DCDCDDD00451197 /* VSModelTravel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6DCC0E81DCDCDDD00451197 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0E91DCDCDDD00451197 /* VSChooseDateTableViewCell.h */,
+				B6DCC0EA1DCDCDDD00451197 /* VSChooseDateTableViewCell.m */,
+				B6DCC0EB1DCDCDDD00451197 /* VSExpenseTableViewCell.h */,
+				B6DCC0EC1DCDCDDD00451197 /* VSExpenseTableViewCell.m */,
+				B6DCC0ED1DCDCDDD00451197 /* VSNotesTableViewCell.h */,
+				B6DCC0EE1DCDCDDD00451197 /* VSNotesTableViewCell.m */,
+				B6DCC0EF1DCDCDDD00451197 /* VSNotificationsTableViewCell.h */,
+				B6DCC0F01DCDCDDD00451197 /* VSNotificationsTableViewCell.m */,
+				B6DCC0F11DCDCDDD00451197 /* VSRideHistoryTableViewCell.h */,
+				B6DCC0F21DCDCDDD00451197 /* VSRideHistoryTableViewCell.m */,
+				B6DCC0F31DCDCDDD00451197 /* VSSelectedDateTableViewCell.h */,
+				B6DCC0F41DCDCDDD00451197 /* VSSelectedDateTableViewCell.m */,
+				B6DCC0F51DCDCDDD00451197 /* VSSummaryTableViewCell.h */,
+				B6DCC0F61DCDCDDD00451197 /* VSSummaryTableViewCell.m */,
+				B6DCC0F71DCDCDDD00451197 /* VSTextFieldView.h */,
+				B6DCC0F81DCDCDDD00451197 /* VSTextFieldView.m */,
+				B6DCC0F91DCDCDDD00451197 /* VSTextFieldView.xib */,
+				B6DCC0FA1DCDCDDD00451197 /* VSTextPickerTableViewCell.h */,
+				B6DCC0FB1DCDCDDD00451197 /* VSTextPickerTableViewCell.m */,
+				B6DCC0FC1DCDCDDD00451197 /* VSTravelTableViewCell.h */,
+				B6DCC0FD1DCDCDDD00451197 /* VSTravelTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6DCC0FE1DCDCDDD00451197 /* location-picker */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0FF1DCDCDDD00451197 /* VSAnnotationView.h */,
+				B6DCC1001DCDCDDD00451197 /* VSAnnotationView.m */,
+				B6DCC1011DCDCDDD00451197 /* VSGeoLocation.h */,
+				B6DCC1021DCDCDDD00451197 /* VSGeoLocation.m */,
+				B6DCC1031DCDCDDD00451197 /* VSGeolocationPickerView.h */,
+				B6DCC1041DCDCDDD00451197 /* VSGeolocationPickerView.m */,
+				B6DCC1051DCDCDDD00451197 /* VSGeolocationPickerView.xib */,
+				B6DCC1061DCDCDDD00451197 /* VSMapUtil.h */,
+				B6DCC1071DCDCDDD00451197 /* VSMapUtil.m */,
+				B6DCC1081DCDCDDD00451197 /* VSPickerItemAnnotation.h */,
+				B6DCC1091DCDCDDD00451197 /* VSPickerItemAnnotation.m */,
+			);
+			path = "location-picker";
+			sourceTree = "<group>";
+		};
+		B6DCC10A1DCDCDDD00451197 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC10B1DCDCDDD00451197 /* Controller */,
+				B6DCC1161DCDCDDD00451197 /* Model */,
+				B6DCC1211DCDCDDD00451197 /* Settings.storyboard */,
+				B6DCC1221DCDCDDD00451197 /* View */,
+				B6DCC1311DCDCDDD00451197 /* VSSettingsConstants.h */,
+				B6DCC1321DCDCDDD00451197 /* VSSettingsConstants.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B6DCC10B1DCDCDDD00451197 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC10C1DCDCDDD00451197 /* VSAddPurposeViewController.h */,
+				B6DCC10D1DCDCDDD00451197 /* VSAddPurposeViewController.m */,
+				B6DCC10E1DCDCDDD00451197 /* VSAddVehicleViewController.h */,
+				B6DCC10F1DCDCDDD00451197 /* VSAddVehicleViewController.m */,
+				B6DCC1101DCDCDDD00451197 /* VSPurposeViewController.h */,
+				B6DCC1111DCDCDDD00451197 /* VSPurposeViewController.m */,
+				B6DCC1121DCDCDDD00451197 /* VSSettingsViewController.h */,
+				B6DCC1131DCDCDDD00451197 /* VSSettingsViewController.m */,
+				B6DCC1141DCDCDDD00451197 /* VSVehiclesViewController.h */,
+				B6DCC1151DCDCDDD00451197 /* VSVehiclesViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6DCC1161DCDCDDD00451197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC1171DCDCDDD00451197 /* VSAddVehicleDataSource.h */,
+				B6DCC1181DCDCDDD00451197 /* VSAddVehicleDataSource.m */,
+				B6DCC1191DCDCDDD00451197 /* VSMoreModel.h */,
+				B6DCC11A1DCDCDDD00451197 /* VSMoreModel.m */,
+				B6DCC11B1DCDCDDD00451197 /* VSPurposeModel.h */,
+				B6DCC11C1DCDCDDD00451197 /* VSPurposeModel.m */,
+				B6DCC11D1DCDCDDD00451197 /* VSVehicleAddFieldModel.h */,
+				B6DCC11E1DCDCDDD00451197 /* VSVehicleAddFieldModel.m */,
+				B6DCC11F1DCDCDDD00451197 /* VSVehicleModel.h */,
+				B6DCC1201DCDCDDD00451197 /* VSVehicleModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6DCC1221DCDCDDD00451197 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC1231DCDCDDD00451197 /* VSMoreCell.h */,
+				B6DCC1241DCDCDDD00451197 /* VSMoreCell.m */,
+				B6DCC1251DCDCDDD00451197 /* VSPurposeAddFieldCell.h */,
+				B6DCC1261DCDCDDD00451197 /* VSPurposeAddFieldCell.m */,
+				B6DCC1271DCDCDDD00451197 /* VSPurposeCell.h */,
+				B6DCC1281DCDCDDD00451197 /* VSPurposeCell.m */,
+				B6DCC1291DCDCDDD00451197 /* VSSettingsSwitchCell.h */,
+				B6DCC12A1DCDCDDD00451197 /* VSSettingsSwitchCell.m */,
+				B6DCC12B1DCDCDDD00451197 /* VSVehicleAddFieldCell.h */,
+				B6DCC12C1DCDCDDD00451197 /* VSVehicleAddFieldCell.m */,
+				B6DCC12D1DCDCDDD00451197 /* VSVehicleAddFieldSwitchCell.h */,
+				B6DCC12E1DCDCDDD00451197 /* VSVehicleAddFieldSwitchCell.m */,
+				B6DCC12F1DCDCDDD00451197 /* VSVehicleCell.h */,
+				B6DCC1301DCDCDDD00451197 /* VSVehicleCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6DCC17D1DCDCE2600451197 /* date-picker */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC17E1DCDCE2600451197 /* VSDatePickerView.h */,
+				B6DCC17F1DCDCE2600451197 /* VSDatePickerView.m */,
+				B6DCC1801DCDCE2600451197 /* VSDatePickerView.xib */,
+			);
+			path = "date-picker";
+			sourceTree = "<group>";
+		};
+		B6E3C8071DCEF6D700A6B473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC09D1DCDCDDD00451197 /* VSAddExpenseDataSource.h */,
+				B6DCC09E1DCDCDDD00451197 /* VSAddExpenseDataSource.m */,
+				B6DCC0AD1DCDCDDD00451197 /* VSMenuModel.h */,
+				B6DCC0AE1DCDCDDD00451197 /* VSMenuModel.m */,
+				B6E3C80A1DCEF74200A6B473 /* VSCameraController.h */,
+				B6E3C80B1DCEF74200A6B473 /* VSCameraController.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6E3C8081DCEF6E400A6B473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC0A11DCDCDDD00451197 /* VSAmountCell.h */,
+				B6DCC0A21DCDCDDD00451197 /* VSAmountCell.m */,
+				B6DCC0A31DCDCDDD00451197 /* VSDateCell.h */,
+				B6DCC0A41DCDCDDD00451197 /* VSDateCell.m */,
+				B6DCC0A51DCDCDDD00451197 /* VSExpenseAttachmentCell.h */,
+				B6DCC0A61DCDCDDD00451197 /* VSExpenseAttachmentCell.m */,
+				B6DCC0A71DCDCDDD00451197 /* VSHorizontalMenuCell.h */,
+				B6DCC0A81DCDCDDD00451197 /* VSHorizontalMenuCell.m */,
+				B6DCC0A91DCDCDDD00451197 /* VSLocationCell.h */,
+				B6DCC0AA1DCDCDDD00451197 /* VSLocationCell.m */,
+				B6DCC0AB1DCDCDDD00451197 /* VSMenuCell.h */,
+				B6DCC0AC1DCDCDDD00451197 /* VSMenuCell.m */,
+				B6DCC0AF1DCDCDDD00451197 /* VSNotesCell.h */,
+				B6DCC0B01DCDCDDD00451197 /* VSNotesCell.m */,
+				B6DCC1841DCDDE3600451197 /* VSGeolocationPickerCell.h */,
+				B6DCC1851DCDDE3600451197 /* VSGeolocationPickerCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B6E3C8091DCEF6EB00A6B473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCC09F1DCDCDDD00451197 /* VSAddExpenseViewController.h */,
+				B6DCC0A01DCDCDDD00451197 /* VSAddExpenseViewController.m */,
+				B6E3C80D1DCEF87200A6B473 /* VSCameraViewController.h */,
+				B6E3C80E1DCEF87200A6B473 /* VSCameraViewController.m */,
+				B6E3C8101DCF336400A6B473 /* VSCameraPermissionsViewController.h */,
+				B6E3C8111DCF336400A6B473 /* VSCameraPermissionsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B6E3C8131DD0093E00A6B473 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3C8141DD0096300A6B473 /* VSBranding.h */,
+				B6E3C8151DD0096300A6B473 /* VSBranding.m */,
+				B6E3C8171DD0097C00A6B473 /* VSQueue.h */,
+				B6E3C8181DD0097C00A6B473 /* VSQueue.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		B6FB5E811D66F917004B716F = {
+			isa = PBXGroup;
+			children = (
+				B6FB5E8C1D66F918004B716F /* vsMileTracker */,
+				B6FB5E8B1D66F918004B716F /* Products */,
+				B61C26E21D68207500BE95EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6FB5E8B1D66F918004B716F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6FB5E8A1D66F918004B716F /* vsMileTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6FB5E8C1D66F918004B716F /* vsMileTracker */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3C8131DD0093E00A6B473 /* Utils */,
+				B6DCC0D41DCDCDDD00451197 /* Landing */,
+				B6DCC09C1DCDCDDD00451197 /* AddExpense */,
+				B6DCC17D1DCDCE2600451197 /* date-picker */,
+				B6DCC0B11DCDCDDD00451197 /* AddNewRide */,
+				B6DCC0C41DCDCDDD00451197 /* ANDLineChartView */,
+				B6DCC0CB1DCDCDDD00451197 /* AppDelegate.h */,
+				B6DCC0CC1DCDCDDD00451197 /* AppDelegate.m */,
+				B6DCC0CD1DCDCDDD00451197 /* Assets.xcassets */,
+				B6DCC0CE1DCDCDDD00451197 /* Base.lproj */,
+				B6DCC0D31DCDCDDD00451197 /* GeoSearch */,
+				B6DCC0FE1DCDCDDD00451197 /* location-picker */,
+				B6DCC10A1DCDCDDD00451197 /* Settings */,
+				B6FB5E961D66F918004B716F /* Main.storyboard */,
+				B6FB5E9C1D66F918004B716F /* Assets.xcassets */,
+				B6FB5E9E1D66F918004B716F /* LaunchScreen.storyboard */,
+				B6FB5EA11D66F918004B716F /* Info.plist */,
+				B6FB5E991D66F918004B716F /* vsMileTracker.xcdatamodeld */,
+				B6FB5E8D1D66F918004B716F /* Supporting Files */,
+			);
+			path = vsMileTracker;
+			sourceTree = "<group>";
+		};
+		B6FB5E8D1D66F918004B716F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6FB5E8E1D66F918004B716F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6FB5E891D66F917004B716F /* vsMileTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6FB5EA41D66F918004B716F /* Build configuration list for PBXNativeTarget "vsMileTracker" */;
+			buildPhases = (
+				B6FB5E861D66F917004B716F /* Sources */,
+				B6FB5E871D66F917004B716F /* Frameworks */,
+				B6FB5E881D66F917004B716F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vsMileTracker;
+			productName = vsMileTracker;
+			productReference = B6FB5E8A1D66F918004B716F /* vsMileTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6FB5E821D66F917004B716F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Virendra Shakya";
+				TargetAttributes = {
+					B6FB5E891D66F917004B716F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FJ585C7YHN;
+						DevelopmentTeamName = "Virendra Shakya";
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B6FB5E851D66F917004B716F /* Build configuration list for PBXProject "vsMileTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6FB5E811D66F917004B716F;
+			productRefGroup = B6FB5E8B1D66F918004B716F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6FB5E891D66F917004B716F /* vsMileTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6FB5E881D66F917004B716F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6DCC1431DCDCDDE00451197 /* VSChooseDateView.xib in Resources */,
+				B6DCC14E1DCDCDDE00451197 /* LaunchScreen.storyboard in Resources */,
+				B6DCC1481DCDCDDE00451197 /* VSSelectedDateTableView.xib in Resources */,
+				B6DCC1731DCDCDDE00451197 /* Settings.storyboard in Resources */,
+				B6DCC1661DCDCDDE00451197 /* VSGeolocationPickerView.xib in Resources */,
+				B6FB5EA01D66F918004B716F /* LaunchScreen.storyboard in Resources */,
+				B69EBF9B1DCDCC3800E2F96A /* VSTextFieldView.xib in Resources */,
+				B6DCC14D1DCDCDDE00451197 /* Assets.xcassets in Resources */,
+				B6DCC14F1DCDCDDE00451197 /* Main.storyboard in Resources */,
+				B6DCC1821DCDCE2600451197 /* VSDatePickerView.xib in Resources */,
+				B6DCC1601DCDCDDE00451197 /* VSTextFieldView.xib in Resources */,
+				B6FB5E9D1D66F918004B716F /* Assets.xcassets in Resources */,
+				B6FB5E981D66F918004B716F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6FB5E861D66F917004B716F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6DCC1831DCDCF2800451197 /* main.m in Sources */,
+				B6DCC16D1DCDCDDE00451197 /* VSVehiclesViewController.m in Sources */,
+				B6DCC1571DCDCDDE00451197 /* VSModelTravel.m in Sources */,
+				B6DCC14C1DCDCDDE00451197 /* AppDelegate.m in Sources */,
+				B6DCC1761DCDCDDE00451197 /* VSPurposeCell.m in Sources */,
+				B6DCC1521DCDCDDE00451197 /* VSDrivesDataSource.m in Sources */,
+				B6DCC1391DCDCDDE00451197 /* VSExpenseAttachmentCell.m in Sources */,
+				B6DCC1371DCDCDDE00451197 /* VSAmountCell.m in Sources */,
+				B6E3C80F1DCEF87200A6B473 /* VSCameraViewController.m in Sources */,
+				B6DCC1361DCDCDDE00451197 /* VSAddExpenseViewController.m in Sources */,
+				B6DCC13D1DCDCDDE00451197 /* VSMenuModel.m in Sources */,
+				B6DCC1511DCDCDDE00451197 /* VSAddNewRideModelController.m in Sources */,
+				B6DCC1611DCDCDDE00451197 /* VSTextPickerTableViewCell.m in Sources */,
+				B6DCC13E1DCDCDDE00451197 /* VSNotesCell.m in Sources */,
+				B6DCC16B1DCDCDDE00451197 /* VSPurposeViewController.m in Sources */,
+				B6DCC15F1DCDCDDE00451197 /* VSTextFieldView.m in Sources */,
+				B6DCC16F1DCDCDDE00451197 /* VSMoreModel.m in Sources */,
+				B6DCC17B1DCDCDDE00451197 /* VSSettingsConstants.m in Sources */,
+				B6DCC1381DCDCDDE00451197 /* VSDateCell.m in Sources */,
+				B6DCC1701DCDCDDE00451197 /* VSPurposeModel.m in Sources */,
+				B6DCC17A1DCDCDDE00451197 /* VSVehicleCell.m in Sources */,
+				B6DCC1631DCDCDDE00451197 /* VSAnnotationView.m in Sources */,
+				B6DCC1651DCDCDDE00451197 /* VSGeolocationPickerView.m in Sources */,
+				B6DCC13B1DCDCDDE00451197 /* VSLocationCell.m in Sources */,
+				B6DCC1791DCDCDDE00451197 /* VSVehicleAddFieldSwitchCell.m in Sources */,
+				B6DCC16E1DCDCDDE00451197 /* VSAddVehicleDataSource.m in Sources */,
+				B6DCC15C1DCDCDDE00451197 /* VSRideHistoryTableViewCell.m in Sources */,
+				B6DCC15B1DCDCDDE00451197 /* VSNotificationsTableViewCell.m in Sources */,
+				B6E3C8161DD0096300A6B473 /* VSBranding.m in Sources */,
+				B6DCC13C1DCDCDDE00451197 /* VSMenuCell.m in Sources */,
+				B6DCC1491DCDCDDE00451197 /* ANDBackgroundChartView.m in Sources */,
+				B6DCC15D1DCDCDDE00451197 /* VSSelectedDateTableViewCell.m in Sources */,
+				B6DCC1541DCDCDDE00451197 /* VSModelNotification.m in Sources */,
+				B6DCC1461DCDCDDE00451197 /* VSSectionTitleTableViewCell.m in Sources */,
+				B6DCC14B1DCDCDDE00451197 /* ANDLineChartView.m in Sources */,
+				B6DCC15E1DCDCDDE00451197 /* VSSummaryTableViewCell.m in Sources */,
+				B6DCC14A1DCDCDDE00451197 /* ANDInternalLineChartView.m in Sources */,
+				B6DCC1711DCDCDDE00451197 /* VSVehicleAddFieldModel.m in Sources */,
+				B6DCC1421DCDCDDE00451197 /* VSChooseDateView.m in Sources */,
+				B6DCC1861DCDDE3600451197 /* VSGeolocationPickerCell.m in Sources */,
+				B6DCC13F1DCDCDDE00451197 /* VSAddNewRideModel.m in Sources */,
+				B6DCC1581DCDCDDE00451197 /* VSChooseDateTableViewCell.m in Sources */,
+				B6DCC1551DCDCDDE00451197 /* VSModelRide.m in Sources */,
+				B6DCC1751DCDCDDE00451197 /* VSPurposeAddFieldCell.m in Sources */,
+				B6DCC15A1DCDCDDE00451197 /* VSNotesTableViewCell.m in Sources */,
+				B6DCC1621DCDCDDE00451197 /* VSTravelTableViewCell.m in Sources */,
+				B6DCC1561DCDCDDE00451197 /* VSModelSummary.m in Sources */,
+				B6DCC1691DCDCDDE00451197 /* VSAddPurposeViewController.m in Sources */,
+				B6DCC1471DCDCDDE00451197 /* VSSelectedDateTableView.m in Sources */,
+				B6DCC1591DCDCDDE00451197 /* VSExpenseTableViewCell.m in Sources */,
+				B6DCC1641DCDCDDE00451197 /* VSGeoLocation.m in Sources */,
+				B6DCC1771DCDCDDE00451197 /* VSSettingsSwitchCell.m in Sources */,
+				B6DCC1741DCDCDDE00451197 /* VSMoreCell.m in Sources */,
+				B6DCC16A1DCDCDDE00451197 /* VSAddVehicleViewController.m in Sources */,
+				B6DCC1351DCDCDDD00451197 /* VSAddExpenseDataSource.m in Sources */,
+				B6DCC1721DCDCDDE00451197 /* VSVehicleModel.m in Sources */,
+				B6E3C8191DD0097C00A6B473 /* VSQueue.m in Sources */,
+				B6DCC16C1DCDCDDE00451197 /* VSSettingsViewController.m in Sources */,
+				B6DCC1411DCDCDDE00451197 /* VSAddRideViewController.m in Sources */,
+				B6DCC1531DCDCDDE00451197 /* VSModelBase.m in Sources */,
+				B6DCC1451DCDCDDE00451197 /* VSLocationPickerTableViewCell.m in Sources */,
+				B6DCC1501DCDCDDE00451197 /* ViewController.m in Sources */,
+				B6E3C8121DCF336400A6B473 /* VSCameraPermissionsViewController.m in Sources */,
+				B6DCC13A1DCDCDDE00451197 /* VSHorizontalMenuCell.m in Sources */,
+				B6DCC1781DCDCDDE00451197 /* VSVehicleAddFieldCell.m in Sources */,
+				B6E3C80C1DCEF74200A6B473 /* VSCameraController.m in Sources */,
+				B6DCC1811DCDCE2600451197 /* VSDatePickerView.m in Sources */,
+				B6DCC1441DCDCDDE00451197 /* VSDatePickerTableViewCell.m in Sources */,
+				B6DCC1681DCDCDDE00451197 /* VSPickerItemAnnotation.m in Sources */,
+				B6DCC1671DCDCDDE00451197 /* VSMapUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6DCC0CF1DCDCDDD00451197 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6DCC0D01DCDCDDD00451197 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B6DCC0D11DCDCDDD00451197 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6DCC0D21DCDCDDD00451197 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6FB5E961D66F918004B716F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6FB5E971D66F918004B716F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6FB5E9E1D66F918004B716F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6FB5E9F1D66F918004B716F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6FB5EA21D66F918004B716F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6FB5EA31D66F918004B716F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6FB5EA51D66F918004B716F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
+				DEVELOPMENT_TEAM = FJ585C7YHN;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				INFOPLIST_FILE = vsMileTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4cats.vsMileTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6FB5EA61D66F918004B716F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
+				DEVELOPMENT_TEAM = FJ585C7YHN;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				INFOPLIST_FILE = vsMileTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.4cats.vsMileTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6FB5E851D66F917004B716F /* Build configuration list for PBXProject "vsMileTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6FB5EA21D66F918004B716F /* Debug */,
+				B6FB5EA31D66F918004B716F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6FB5EA41D66F918004B716F /* Build configuration list for PBXNativeTarget "vsMileTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6FB5EA51D66F918004B716F /* Debug */,
+				B6FB5EA61D66F918004B716F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6FB5E991D66F918004B716F /* vsMileTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6FB5E9A1D66F918004B716F /* vsMileTracker.xcdatamodel */,
+			);
+			currentVersion = B6FB5E9A1D66F918004B716F /* vsMileTracker.xcdatamodel */;
+			path = vsMileTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B6FB5E821D66F917004B716F /* Project object */;
+}

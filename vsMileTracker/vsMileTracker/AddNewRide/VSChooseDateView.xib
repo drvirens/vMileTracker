@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VSChooseDateView">
+            <connections>
+                <outlet property="datePicker" destination="C2z-kD-dBE" id="EOt-od-I84"/>
+                <outlet property="widthDatePicker" destination="MEH-Xa-I0Z" id="fZ1-QU-GdC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker clipsSubviews="YES" tag="69" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="C2z-kD-dBE">
+                    <frame key="frameInset" minX="41" width="279" height="667"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="MEH-Xa-I0Z"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="495086192.42275">
+                        <!--2016-09-09 03:56:32 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="C2z-kD-dBE" secondAttribute="bottom" id="7lK-Zd-Sd2"/>
+                <constraint firstItem="C2z-kD-dBE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DUX-uo-g2L"/>
+                <constraint firstItem="C2z-kD-dBE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IFb-wo-eQa"/>
+                <constraint firstItem="C2z-kD-dBE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h7F-Do-OlZ"/>
+            </constraints>
+            <point key="canvasLocation" x="130.5" y="77.5"/>
+        </view>
+    </objects>
+</document>
