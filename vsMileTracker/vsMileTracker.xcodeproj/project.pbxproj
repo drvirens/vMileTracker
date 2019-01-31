@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B61C26E41D68207500BE95EE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61C26E31D68207500BE95EE /* MapKit.framework */; };
-		B69EBF9B1DCDCC3800E2F96A /* VSTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69EBF8E1DCDCC3800E2F96A /* VSTextFieldView.xib */; };
 		B6DCC1351DCDCDDD00451197 /* VSAddExpenseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC09E1DCDCDDD00451197 /* VSAddExpenseDataSource.m */; };
 		B6DCC1361DCDCDDE00451197 /* VSAddExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0A01DCDCDDD00451197 /* VSAddExpenseViewController.m */; };
 		B6DCC1371DCDCDDE00451197 /* VSAmountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCC0A21DCDCDDD00451197 /* VSAmountCell.m */; };
@@ -95,7 +94,6 @@
 
 /* Begin PBXFileReference section */
 		B61C26E31D68207500BE95EE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B69EBF8E1DCDCC3800E2F96A /* VSTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VSTextFieldView.xib; path = "/Users/virendrashakya/VIREN/mile-tracker/__backup/vsMileTracker/vsMileTracker/Landing/View/VSTextFieldView.xib"; sourceTree = "<absolute>"; };
 		B6DCC09D1DCDCDDD00451197 /* VSAddExpenseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddExpenseDataSource.h; sourceTree = "<group>"; };
 		B6DCC09E1DCDCDDD00451197 /* VSAddExpenseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAddExpenseDataSource.m; sourceTree = "<group>"; };
 		B6DCC09F1DCDCDDD00451197 /* VSAddExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAddExpenseViewController.h; sourceTree = "<group>"; };
@@ -328,13 +326,6 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
-		B6DCC0D31DCDCDDD00451197 /* GeoSearch */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GeoSearch;
-			sourceTree = "<group>";
-		};
 		B6DCC0D41DCDCDDD00451197 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,12 +551,20 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		B6F0D4262202D9DE00CCCC33 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		B6FB5E811D66F917004B716F = {
 			isa = PBXGroup;
 			children = (
 				B6FB5E8C1D66F918004B716F /* vsMileTracker */,
 				B6FB5E8B1D66F918004B716F /* Products */,
 				B61C26E21D68207500BE95EE /* Frameworks */,
+				B6F0D4262202D9DE00CCCC33 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -590,7 +589,6 @@
 				B6DCC0CC1DCDCDDD00451197 /* AppDelegate.m */,
 				B6DCC0CD1DCDCDDD00451197 /* Assets.xcassets */,
 				B6DCC0CE1DCDCDDD00451197 /* Base.lproj */,
-				B6DCC0D31DCDCDDD00451197 /* GeoSearch */,
 				B6DCC0FE1DCDCDDD00451197 /* location-picker */,
 				B6DCC10A1DCDCDDD00451197 /* Settings */,
 				B6FB5E961D66F918004B716F /* Main.storyboard */,
@@ -682,7 +680,6 @@
 				B6DCC1731DCDCDDE00451197 /* Settings.storyboard in Resources */,
 				B6DCC1661DCDCDDE00451197 /* VSGeolocationPickerView.xib in Resources */,
 				B6FB5EA01D66F918004B716F /* LaunchScreen.storyboard in Resources */,
-				B69EBF9B1DCDCC3800E2F96A /* VSTextFieldView.xib in Resources */,
 				B6DCC14D1DCDCDDE00451197 /* Assets.xcassets in Resources */,
 				B6DCC14F1DCDCDDE00451197 /* Main.storyboard in Resources */,
 				B6DCC1821DCDCE2600451197 /* VSDatePickerView.xib in Resources */,
